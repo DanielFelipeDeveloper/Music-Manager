@@ -7,7 +7,12 @@ routes.get('/', (req,res) => {
 })
 
 routes.get('/producers', (req,res) => {
-  return res.render('layout.njk')
+  return res.render('producers/index')
 })
+
+routes.get('/producers/create', (req, res) => {
+  return res.render('producers/create')
+})
+
 
 module.exports = routes

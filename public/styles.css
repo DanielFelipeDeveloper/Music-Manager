@@ -3,25 +3,26 @@
 * {
   margin: 0;
   padding: 0;
-  border: none;
-  box-sizing: border-box;
 }
 
 :root {
-  --primary-color: #aa00ff;
+  --primary-color: #c600eb;
+  --secondary-color: #630dd0;
 }
 
 html,body {
   font-family: 'Poppins', sans-serif;
   background: black;
+  box-sizing: border-box;
 }
 
 header {
+  box-sizing: border-box;
   width: 100%;
   padding: 32px;
   text-align: center;
   border-bottom: 1px solid var(--primary-color);
-  box-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-color), 0 0 60px var(--primary-color);
+  box-shadow: 0 0 5px var(--primary-color), 0 0 20px var(--primary-color), 0 0 40px var(--primary-color);
 }
 
 .links {
@@ -60,4 +61,92 @@ header {
 .links a:hover::after {
   width: 100%;
   transition: width 200ms ease-in-out;
+}
+
+/*== CARD ==*/
+
+.card {
+  background: linear-gradient(0deg,#000,#262626);
+
+  width: 800px;
+  min-height: 400px;
+
+  margin: 50px auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  box-shadow: 0px 1px 10px -1px var(--primary-color);
+  filter: contrast(120%);
+
+  opacity: 0;
+
+  animation-name: up;
+  animation-duration: 700ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes up {
+  from {
+    
+    transform: translateX(1000px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.avatar {
+  width: 320px;
+}
+
+.details {
+  cursor: default;
+
+  box-sizing: border-box;
+  padding: 32px;
+
+  width: 480px;
+
+  color: white;
+}
+
+.details .item {
+  border-bottom: 1px solid #777;
+  padding: 16px 0;
+}
+
+.details .item:last-child {
+  border: none;
+}
+
+.details h3,
+.details .item div:nth-child(1) {
+  font-size: 14px;
+  line-height: 24px;
+  color: #aaa;
+  letter-spacing: 0.7px;
+  font-weight: normal;
+}
+
+.details .item div:nth-child(2) {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.details h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.details .item span {
+  padding: 8px 16px;
+  color: white;
+  background-color: var(--secondary-color);
+  border-radius: 16px;
+  margin-right: 4px;
+  margin-top: 8px;
+  display: inline-block;
 }

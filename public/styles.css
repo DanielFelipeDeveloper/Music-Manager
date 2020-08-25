@@ -8,6 +8,7 @@
 :root {
   --primary-color: #c600eb;
   --secondary-color: #630dd0;
+  --green-color: #83f52c;
 }
 
 html,body {
@@ -15,6 +16,8 @@ html,body {
   background: black;
   box-sizing: border-box;
 }
+
+/* == HEADER == */
 
 header {
   box-sizing: border-box;
@@ -109,10 +112,11 @@ header {
 
   width: 480px;
 
-  color: white;
+  
 }
 
 .details .item {
+  color: #fff;
   border-bottom: 1px solid #777;
   padding: 16px 0;
 }
@@ -122,6 +126,7 @@ header {
 }
 
 .details h3,
+.details .form div:nth-child(1),
 .details .item div:nth-child(1) {
   font-size: 14px;
   line-height: 24px;
@@ -141,6 +146,7 @@ header {
   color: var(--primary-color);
 }
 
+.form div span,
 .details .item span {
   padding: 8px 16px;
   color: white;
@@ -149,4 +155,202 @@ header {
   margin-right: 4px;
   margin-top: 8px;
   display: inline-block;
+}
+
+/* FORM */
+
+.details .form {
+  padding: 16px 0;
+}
+
+input, select {
+  width: 100%;
+  outline: none;
+  border: none;
+  background: none;
+  color: rgb(241, 234, 234);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.details .form select {
+  color: var(--green-color);
+  background-color: black;
+}
+
+input[type="radio"] {
+  width: initial;
+  margin-right: 4px;
+}
+
+input::placeholder {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.details .form input[type="date"] {
+  color: var(--green-color);
+}
+
+
+input[type='radio']:after {
+  cursor: pointer;
+  transition: 0.5s;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #777;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid black;
+}
+
+input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: var(--green-color);
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid black;
+}
+
+
+button{
+  cursor: pointer;
+  border: 0;
+  background: none;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  padding: 8px 32px;
+  margin-top: 32px;
+  color: var(--primary-color);
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+}
+
+button:nth-child(1)
+{
+  filter: hue-rotate(290deg); 
+}
+
+button:hover {
+  background: var(--primary-color);
+  color: #050801;
+  box-shadow: 0 0 5px var(--primary-color),
+              0 0 25px var(--primary-color),
+              0 0 50px var(--primary-color),
+              0 0 200px var(--primary-color);
+}
+
+button span {
+  position: absolute;
+  display: block;
+}
+
+button span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--primary-color));
+  animation: animate1 3s linear infinite;
+}
+
+@keyframes animate1
+{
+  0%
+  {
+    left: -100%;
+  }
+  50%,100%
+  {
+    left: 100%;
+  }
+
+}
+
+button span:nth-child(2) {
+  top: 100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, var(--primary-color));
+  animation: animate2 3s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes animate2
+{
+  0%
+  {
+    top: -100%;
+  }
+  50%,100%
+  {
+    top: 100%;
+  }
+
+}
+
+button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, var(--primary-color));
+  animation: animate3 3s linear infinite;
+  animation-delay: 1.50s;
+}
+
+@keyframes animate3
+{
+  0%
+  {
+    right: -100%;
+  }
+  50%,100%
+  {
+    right: 100%;
+  }
+
+}
+
+button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, var(--primary-color));
+  animation: animate4 3s linear infinite;
+  animation-delay: 2.25s;
+}
+
+@keyframes animate4
+{
+  0%
+  {
+    bottom: -100%;
+  }
+  50%,100%
+  {
+    bottom: 100%;
+  }
+
 }

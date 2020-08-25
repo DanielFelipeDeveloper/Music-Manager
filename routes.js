@@ -14,5 +14,9 @@ routes.get('/producers/create', (req, res) => {
   return res.render('producers/create')
 })
 
+routes.post('/producers', (req,res) => {
+  return res.send('recebido')
+})
+
 
 module.exports = routes

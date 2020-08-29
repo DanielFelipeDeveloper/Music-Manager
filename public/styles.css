@@ -137,7 +137,7 @@ header {
 
 .details .item div:nth-child(2) {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .details h3 {
@@ -148,13 +148,19 @@ header {
 
 .form div span,
 .details .item span {
+  text-transform: uppercase;
   padding: 8px 16px;
-  color: white;
+  font-weight: bold;
+  color: black;
   background-color: var(--secondary-color);
   border-radius: 16px;
   margin-right: 4px;
   margin-top: 8px;
   display: inline-block;
+}
+
+.details #musical-genre span {
+  background-color: var(--primary-color);
 }
 
 /* FORM */
@@ -192,6 +198,11 @@ input::placeholder {
   color: var(--green-color);
 }
 
+.details #daw,
+.details #created-at {
+  color: var(--green-color);
+}
+
 
 input[type='radio']:after {
   cursor: pointer;
@@ -223,11 +234,13 @@ input[type='radio']:checked:after {
   border: 2px solid black;
 }
 
-
+/* BUTTON NEON ANIMATION */
+.card a,
 button{
   cursor: pointer;
   border: 0;
   background: none;
+  outline: 0;
   box-sizing: border-box;
   text-align: center;
   width: 100%;
@@ -237,19 +250,21 @@ button{
   margin-top: 32px;
   color: var(--primary-color);
   font-size: 18px;
+  font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
   transition: 0.5s;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
 }
-
+.card a:nth-child(1),
 button:nth-child(1)
 {
   filter: hue-rotate(290deg); 
 }
 
+.card a:hover,
 button:hover {
   background: var(--primary-color);
   color: #050801;
@@ -258,12 +273,13 @@ button:hover {
               0 0 50px var(--primary-color),
               0 0 200px var(--primary-color);
 }
-
+.card a span,
 button span {
   position: absolute;
   display: block;
 }
 
+.card a span:nth-child(1),
 button span:nth-child(1) {
   top: 0;
   left: 0;
@@ -285,7 +301,7 @@ button span:nth-child(1) {
   }
 
 }
-
+.card a span:nth-child(2),
 button span:nth-child(2) {
   top: 100%;
   right: 0;
@@ -309,6 +325,7 @@ button span:nth-child(2) {
 
 }
 
+.card a span:nth-child(3),
 button span:nth-child(3) {
   bottom: 0;
   right: -100%;
@@ -332,6 +349,7 @@ button span:nth-child(3) {
 
 }
 
+.card a span:nth-child(4),
 button span:nth-child(4) {
   bottom: -100%;
   left: 0;
@@ -354,3 +372,6 @@ button span:nth-child(4) {
   }
 
 }
+
+/* SHOW */
+

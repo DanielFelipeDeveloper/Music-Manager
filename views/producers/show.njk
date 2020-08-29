@@ -1,0 +1,60 @@
+{% extends 'layout.njk' %}
+
+{% block content %}
+    <div class="card">
+      <section class="avatar"
+        style="background: url({{ producer.avatar_url }}) no-repeat center center / cover"
+      >  
+      </section>
+      <section class="details">
+        
+        <h3>Detalhes</h3>
+
+        <div class="item">
+          <div>{{ "Produtor" if producer.gender == "M" else "Produtora" }}</div>
+          <div>{{producer.name}}</div>
+        </div>
+
+        <div class="item">
+          <div>Idade</div>
+          <div>{{producer.age}}</div>
+        </div>
+
+        <div class="item" id="daw">
+          <div>DAW</div>
+          <div>{{producer.daw}}</div>
+        </div>
+
+        <div class="item">
+          <div>Área de Atuação</div>
+          <div>
+            {% for service in producer.services %}
+              <span>{{service}}</span>
+            {% endfor %}
+          </div>
+         
+        </div>
+
+        <div class="item" id="musical-genre">
+          <div>Estilo Músical</div>
+          {% for musicalGenre in producer.musicalGenre %}
+          <span>{{musicalGenre}}</span>
+          {% endfor %}
+        </div>
+
+        <div class="item" id="created-at">
+          <div>Desde</div>
+          <div>{{ producer.created_at }}</div>
+        </div>
+
+        <a href="/producers/{{ producer.id }}/edit">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Editar
+        </a>        
+      </section>
+
+    </div>
+{% endblock %}

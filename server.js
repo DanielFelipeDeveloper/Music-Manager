@@ -6,6 +6,7 @@ const server = express()
 
 server.use(express.static(__dirname + '/views'));
 server.use(express.static(__dirname + '/public'));
+server.use(express.urlencoded({ extended: true }))
 server.use(routes)
 
 server.set("view engine", "njk")

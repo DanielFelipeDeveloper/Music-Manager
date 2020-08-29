@@ -5,19 +5,21 @@
       type="url"
       name="avatar_url"
       placeholder="http://"
-      value=""
+      autocomplete="off"
+      value="{{ producer.avatar_url }}"
     >
   </div>
 </div>
 
 <div class="form">
-  <div>Produtor</div>
+  <div>Produtor(a)</div>
   <div>
     <input 
       type="text"
       name="name"
       placeholder="Nome de Produtor(a)"
-      value=""
+      value="{{ producer.name }}"
+      autocomplete="off"
     >
   </div>
 </div>
@@ -29,7 +31,7 @@
       type="date"
       name="birth"
       placeholder="Nome do Produtor"
-      value=""
+      value="{{ producer.birth }}"
     >
   </div>
 </div>
@@ -41,7 +43,8 @@
       type="text"
       name="services"
       placeholder="Separe os serviços prestados por virgula"
-      value=""
+      value="{{ producer.services }}"
+      autocomplete="off"
     >
   </div>
 </div>  
@@ -53,7 +56,8 @@
       type="text"
       name="musicalGenre"
       placeholder="Separe os gêneros músicais por virgula"
-      value=""
+      value="{{ producer.musicalGenre }}"
+      autocomplete="off"
     >
   </div>
 </div>  
@@ -62,12 +66,24 @@
     <div>DAW</div>
     <div>
       <select name="daw">
-        <option value="fl">FL Studio</option>
-        <option value="ableton">Ableton Live</option>
-        <option value="pro">Pro Tools</option>
-        <option value="logic">Logic Pro</option>
-        <option value="reaper">Reaper</option>
-        <option value="studio">Studio One 3</option>
+        <option value="fl"{% if producer.daw == "fl"%}selected{% endif %}>
+          FL Studio
+        </option>
+        <option value="ableton"{% if producer.daw == "ableton"%}selected{% endif %}>
+          Ableton Live
+        </option>
+        <option value="protools"{% if producer.daw == "protools"%}selected{% endif %}>
+          Pro Tools
+        </option>
+        <option value="logic"{% if producer.daw == "logic"%}selected{% endif %}>
+          Logic Pro
+        </option>
+        <option value="reaper"{% if producer.daw == "reaper"%}selected{% endif %}>
+          Reaper
+        </option>
+        <option value="studio"{% if producer.daw == "studio"%}selected{% endif %}>
+          Studio One 3
+        </option>
       </select>
     </div>
   </div>
@@ -80,6 +96,7 @@
         type="radio"
         name="gender"
         value="M"
+        checked
       >
       Masculino
     </span>

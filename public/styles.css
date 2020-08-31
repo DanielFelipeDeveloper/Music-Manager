@@ -111,7 +111,6 @@ header {
   padding: 32px;
 
   width: 480px;
-
   
 }
 
@@ -168,6 +167,8 @@ header {
 .details .form {
   padding: 16px 0;
 }
+
+
 
 input, select {
   width: 100%;
@@ -237,17 +238,18 @@ input[type='radio']:checked:after {
 /* BUTTON NEON ANIMATION */
 .card a,
 button{
+  width: 100%;
   cursor: pointer;
   border: 0;
+  border-radius: 2px;
   background: none;
   outline: 0;
   box-sizing: border-box;
   text-align: center;
-  width: 100%;
   position: relative;
   display: inline-block;
   padding: 8px 32px;
-  margin-top: 32px;
+  margin-top: 16px;
   color: var(--primary-color);
   font-size: 18px;
   font-weight: bold;
@@ -258,10 +260,15 @@ button{
   letter-spacing: 0px;
   -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
 }
-.card a:nth-child(1),
-button:nth-child(1)
-{
-  filter: hue-rotate(290deg); 
+
+button[type="submit"] {
+  width: 49%;
+  float: left;
+  margin-left: 4px;
+}
+
+button[type="submit"]:last-child{
+  margin-top: 32px;
 }
 
 .card a:hover,
@@ -373,5 +380,33 @@ button span:nth-child(4) {
 
 }
 
-/* SHOW */
+button#delete {
+  color: red;
+}
 
+button#delete:hover {
+  background: red;
+  color: #050801;
+  box-shadow: 0 0 5px red,
+              0 0 25px red,
+              0 0 50px red,
+              0 0 200px red;
+}
+
+
+button#delete span:nth-child(1) {
+  background: linear-gradient(90deg, transparent, red);
+}
+
+button#delete span:nth-child(2) {
+  background: linear-gradient(180deg, transparent, red);
+}
+
+
+button#delete span:nth-child(3) {
+  background: linear-gradient(270deg, transparent, red);
+}
+
+button#delete span:nth-child(4) {
+  background: linear-gradient(360deg, transparent, red);
+}

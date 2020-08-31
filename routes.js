@@ -21,4 +21,8 @@ routes.post('/producers', producers.post)
 
 routes.get('/producers/:id/edit', producers.edit)
 
+routes.put('/producers', producers.put)
+
+routes.delete('/producers', producers.delete)
+
 module.exports = routes

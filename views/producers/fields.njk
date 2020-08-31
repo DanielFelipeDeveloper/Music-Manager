@@ -30,7 +30,6 @@
     <input 
       type="date"
       name="birth"
-      placeholder="Nome do Produtor"
       value="{{ producer.birth }}"
     >
   </div>
@@ -96,7 +95,9 @@
         type="radio"
         name="gender"
         value="M"
+        {% if producer.gender == "M"%}
         checked
+        {% endif %}
       >
       Masculino
     </span>
@@ -106,6 +107,9 @@
         type="radio"
         name="gender"
         value="F"
+        {% if producer.gender == "F"%}
+        checked
+        {% endif %}
       >
       Feminino
     </span>

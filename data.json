@@ -3,68 +3,13 @@
     {
       "id": 1,
       "avatar_url": "https://source.unsplash.com/collection/403065/500x500",
-      "name": "Daniel Felipe Breda da Silva",
-      "birth": "2002-01-28",
-      "services": "Beatmaker, Mixagem, Masterização",
-      "musicalGenre": "Rap, Trap, R&B, Drill, Boombap",
-      "daw": "fl",
-      "gender": "M",
-      "created_at": 1598525289351
-    },
-    {
-      "id": 2,
-      "avatar_url": "https://source.unsplash.com/collection/403065/500x500",
-      "name": "João",
-      "birth": "2002-08-29",
+      "name": "D.Wise",
+      "birth": 1012176000000,
       "services": "Beatmaker",
-      "musicalGenre": "rap",
-      "daw": "protools",
-      "gender": "M",
-      "created_at": 1598639230289
-    },
-    {
-      "id": 3,
-      "avatar_url": "https://source.unsplash.com/collection/403065/500x500",
-      "name": "João",
-      "birth": "2002-02-21",
-      "services": "Beatmaker",
-      "musicalGenre": "rap",
-      "daw": "protools",
-      "gender": "M",
-      "created_at": 1598659825650
-    },
-    {
-      "id": 4,
-      "avatar_url": "https://source.unsplash.com/collection/403065/500x500",
-      "name": "Daniel Felipe Breda da Silva",
-      "birth": "2003-01-28",
-      "services": "Beatmaker, Mixagem, Masterização",
-      "musicalGenre": "Rap, Trap, R&B, Drill, Boombap",
+      "musicalGenre": "Rap",
       "daw": "fl",
       "gender": "M",
-      "created_at": 1598660864070
-    },
-    {
-      "id": 5,
-      "avatar_url": "https://source.unsplash.com/collection/403065/500x500",
-      "name": "Daniel Felipe Breda da Silva",
-      "birth": "2003-01-28",
-      "services": "Beatmaker, Mixagem, Masterização",
-      "musicalGenre": "Rap, Trap, R&B, Drill, Boombap",
-      "daw": "fl",
-      "gender": "M",
-      "created_at": 1598661234998
-    },
-    {
-      "id": 6,
-      "avatar_url": "https://source.unsplash.com/collection/403065/500x500",
-      "name": "Daniel Felipe Breda da Silva",
-      "birth": "2000-01-28",
-      "services": "Beatmaker, Mixagem, Masterização",
-      "musicalGenre": "Rap, Trap, R&B, Drill, Boombap",
-      "daw": "fl",
-      "gender": "M",
-      "created_at": 1598661248703
+      "created_at": 1598909607799
     }
   ]
 }

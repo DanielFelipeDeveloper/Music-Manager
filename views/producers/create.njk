@@ -1,5 +1,11 @@
 {% extends 'layout.njk' %}
 
+{% block header %}
+<link rel="stylesheet" href="/forms.css">
+<link rel="stylesheet" href="/animations.css">
+<link rel="stylesheet" href="/create.css">
+{% endblock header %}
+
 {% block content %}
   <form class="card" method="post" action="/producers">
     <section class="avatar"

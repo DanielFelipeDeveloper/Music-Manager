@@ -5,6 +5,10 @@ const data = require('./data.json')
 
 const { age, daw, date } = require('./utils')
 
+exports.index = (req,res) => {
+  return res.render('producers/index', { producers : data.producers })
+}
+
 exports.post = (req,res) => {
   const keys = Object.keys(req.body)
 

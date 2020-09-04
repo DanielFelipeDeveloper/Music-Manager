@@ -1,0 +1,218 @@
+/* BUTTON NEON ANIMATION */
+.card a,
+button{
+  width: 100%;
+  cursor: pointer;
+  border: 0;
+  border-radius: 2px;
+  background: none;
+  outline: 0;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  padding: 8px 32px;
+  margin-top: 16px;
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  letter-spacing: 0px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+}
+
+button[type="submit"] {
+  width: 49%;
+  float: left;
+  margin-left: 4px;
+}
+
+button[type="submit"]:last-child{
+  margin-top: 32px;
+}
+
+.card a:hover,
+button:hover {
+  background: var(--primary-color);
+  color: #050801;
+  box-shadow: 0 0 5px var(--primary-color),
+              0 0 25px var(--primary-color),
+              0 0 50px var(--primary-color),
+              0 0 200px var(--primary-color);
+}
+.card a span,
+button span {
+  position: absolute;
+  display: block;
+}
+
+.card a span:nth-child(1),
+button span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--primary-color));
+  animation: animate1 3s linear infinite;
+}
+
+@keyframes animate1
+{
+  0%
+  {
+    left: -100%;
+  }
+  50%,100%
+  {
+    left: 100%;
+  }
+
+}
+.card a span:nth-child(2),
+button span:nth-child(2) {
+  top: 100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, var(--primary-color));
+  animation: animate2 3s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes animate2
+{
+  0%
+  {
+    top: -100%;
+  }
+  50%,100%
+  {
+    top: 100%;
+  }
+
+}
+
+.card a span:nth-child(3),
+button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, var(--primary-color));
+  animation: animate3 3s linear infinite;
+  animation-delay: 1.50s;
+}
+
+@keyframes animate3
+{
+  0%
+  {
+    right: -100%;
+  }
+  50%,100%
+  {
+    right: 100%;
+  }
+
+}
+
+.card a span:nth-child(4),
+button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, var(--primary-color));
+  animation: animate4 3s linear infinite;
+  animation-delay: 2.25s;
+}
+
+@keyframes animate4
+{
+  0%
+  {
+    bottom: -100%;
+  }
+  50%,100%
+  {
+    bottom: 100%;
+  }
+
+}
+
+button#delete {
+  color: red;
+}
+
+button#delete:hover {
+  background: red;
+  color: #050801;
+  box-shadow: 0 0 5px red,
+              0 0 25px red,
+              0 0 50px red,
+              0 0 200px red;
+}
+
+
+button#delete span:nth-child(1) {
+  background: linear-gradient(90deg, transparent, red);
+}
+
+button#delete span:nth-child(2) {
+  background: linear-gradient(180deg, transparent, red);
+}
+
+
+button#delete span:nth-child(3) {
+  background: linear-gradient(270deg, transparent, red);
+}
+
+button#delete span:nth-child(4) {
+  background: linear-gradient(360deg, transparent, red);
+}
+
+button#delete {
+  color: red;
+}
+
+button#delete:hover {
+  background: red;
+  color: #050801;
+  box-shadow: 0 0 5px red,
+              0 0 25px red,
+              0 0 50px red,
+              0 0 200px red;
+}
+
+.new-link a.new span:nth-child(1) {
+  background: linear-gradient(90deg, transparent, red);
+}
+
+.new-link a.new span:nth-child(2) {
+  background: linear-gradient(180deg, transparent, red);
+}
+
+
+.new-link a.new span:nth-child(3) {
+  background: linear-gradient(270deg, transparent, red);
+}
+
+.new-link a.new span:nth-child(4) {
+  background: linear-gradient(360deg, transparent, red);
+}
+
+.new-link a.new {
+  color: red;
+}
+
+.new-link a.new:hover {
+  background: red;
+  color: #050801;
+  box-shadow: 0 0 5px red,
+              0 0 25px red,
+              0 0 50px red,
+              0 0 200px red;
+}

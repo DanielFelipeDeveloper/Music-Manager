@@ -7,9 +7,7 @@ routes.get('/', (req,res) => {
   return res.redirect('/producers')
 })
 
-routes.get('/producers', (req,res) => {
-  return res.render('producers/index')
-})
+routes.get('/producers', producers.index)
 
 routes.get('/producers/create', (req, res) => {
   return res.render('producers/create')

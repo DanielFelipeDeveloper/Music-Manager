@@ -8,7 +8,7 @@
 {% block content %}
   <div class="card table-container">
     <div class="new-link">
-      <a href="/producers/create" class="new">
+      <a href="/artists/create" class="new">
         <span></span>
         <span></span>
         <span></span>
@@ -19,21 +19,21 @@
     <table width="100%">
       <thead>
         <tr>
-          <th>Produtor</th>
-          <th>Área de Atuação</th>
+          <th>Artista</th>
+          <th>Estilo Músical</th>
           <th>Ação</th>
         </tr>
       </thead>
       <tbody>
-        {% for producer in producers %}
+        {% for artist in artists %}
         <tr>
           <td>
-            <span style="background-image: url({{producer.avatar_url}})"></span>
-            {{ producer.name }}
+            <span style="background-image: url({{artist.avatar_url}})"></span>
+            {{ artist.name }}
           </td>
-          <td>{{ producer.services }}</td>
+          <td>{{ artist.musicalGenre }}</td>
           <td>
-            <a href="/producers/{{producer.id}}">
+            <a href="/artists/{{artist.id}}">
               <span></span>
               <span></span>
               <span></span>

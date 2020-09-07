@@ -7,15 +7,15 @@
 {% endblock header %}
 
 {% block content %}
-  <form class="card" method="post" action="/producers">
+  <form class="card" method="post" action="/artists">
     <section class="avatar"
     style="background: url(https://source.unsplash.com/collection/403065/500x500) no-repeat center center / cover">
     </section> 
       <section class="details">
         
-        <h3>Novo Produtor</h3>
+        <h3>Novo Artista</h3>
 
-        {% include 'producers/fields.njk' %}
+        {% include 'artists/fields.njk' %}
 
       </section>
   </form>

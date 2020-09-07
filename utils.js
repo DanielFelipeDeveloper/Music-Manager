@@ -48,5 +48,23 @@ module.exports = {
 
     return iso
 
+  },
+  experience: function experience(timeExperience) {
+    const time = timeExperience
+
+    switch(time) {
+      case "0-12":
+      return "0 a 12 meses";
+      break;
+      case "1-2":
+      return "1 a 2 anos";
+      break;
+      case "2-5":
+      return "2 a 5 anos";
+      break;
+      case "5+":
+      return "5 anos ou +";
+      break;
+    }
   }
 }

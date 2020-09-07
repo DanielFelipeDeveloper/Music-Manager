@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles/styles.css">
     {% block header %}
     {% endblock header %}
     <title>Music Manager</title>
@@ -11,13 +11,13 @@
   <body>
     <header>
       <div class="links">
-        <a href="/producers" class="active">Produtores</a>
+        <a href="/producers">Produtores</a>
         <a href="/artists">Artistas</a>
       </div>
     </header>
 
       {% block content %}
       {% endblock %}  
-
+  <script src="/scripts/scripts.js"></script>
   </body>
 </html>

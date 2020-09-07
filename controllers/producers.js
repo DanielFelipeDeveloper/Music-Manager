@@ -1,12 +1,16 @@
 const fs = require('fs')
 const Intl = require('intl')
 
-const data = require('./data.json')
+const data = require('../data.json')
 
-const { age, daw, date } = require('./utils')
+const { age, daw, date } = require('../utils')
 
 exports.index = (req,res) => {
   return res.render('producers/index', { producers : data.producers })
+}
+
+exports.create = (req, res) => {
+  return res.render('producers/create')
 }
 
 exports.post = (req,res) => {

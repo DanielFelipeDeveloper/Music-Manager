@@ -40,3 +40,25 @@ $ o navegador vai abrir automaticamente com o browser-sync na porta localhost:30
 * Node.js
 * Nunjucks
 * Browser-sync
+
+### :page_with_curl: **Resultados:**
+
+<h3 align="center">
+  <img alt="Producers" src="https://github.com/DanielFelipeDeveloper/Music-Manager/blob/master/public/assets/Producers.PNG"/>
+</h3>
+
+<h3 align="center">
+  <img alt="create" src="https://github.com/DanielFelipeDeveloper/Music-Manager/blob/master/public/assets/create.PNG"/>
+</h3>
+
+<h3 align="center">
+  <img alt="show" src="https://github.com/DanielFelipeDeveloper/Music-Manager/blob/master/public/assets/show.PNG"/>
+</h3>
+
+<h3 align="center">
+  <img alt="edit" src="https://github.com/DanielFelipeDeveloper/Music-Manager/blob/master/public/assets/edit.PNG"/>
+</h3>
+
+
+
+
